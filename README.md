@@ -21,6 +21,9 @@ import seaborn as sns
 df = pd.read_csv("games.csv")
 df.dropna(inplace=True)
 
+df = pd.read_csv("games.csv")
+df.dropna(inplace=True)
+
 *Filtering Top 5 Publishers
 top_publishers = df["Publisher"].value_counts().head(5).index
 top_5_data = df[df["Publisher"].isin(top_publishers)]
